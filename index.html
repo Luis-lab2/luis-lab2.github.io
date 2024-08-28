@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="audio">
+            <audio Controls>
+                <source src="Cats - The Living Tombstone (Slowed + Reverb).mp3">
+            </audio>
+   
+       </div>
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Ass: Seu programador secreto.</strong>
+                        <p>
+                            Pensar em você, enquanto faço isso, enche o meu grande coração de grande amor! Seja minha mulher, hoje amanhã e para sempre! Me deixe mostrar que eu sou o seu homem e, juntos, vamos viver uma montanha russa de felicidade!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
